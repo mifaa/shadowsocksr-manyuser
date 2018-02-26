@@ -102,12 +102,12 @@ development_tools_installation(){
 	
 }
 libsodium_installation(){
-	wget https://raw.githubusercontent.com/pandoraes/shadowsocksr-manyuser/master/libsodium/libsodium-stable.tar.gz
-	if [[ ! -f ${libsodium-version}.tar.gz ]]; then
-		echo -e "${Error} ${RedBG} ${libsodium-version} download FAIL ${Font}"
+	wget https://raw.githubusercontent.com/mifaa/shadowsocksr-manyuser/master/libsodium/libsodium-stable.tar.gz
+	if [[ ! -f libsodium-stable.tar.gz ]]; then
+		echo -e "${Error} ${RedBG} libsodium-stable download FAIL ${Font}"
 		exit 1
 	fi
-	tar xf ${libsodium-version}.tar.gz && rm -rf ${libsodium-version}.tar.gz && cd ${libsodium-version}
+	tar xf libsodium-stable.tar.gz && rm -rf libsodium-stable.tar.gz && cd libsodium-stable
 	./configure --prefix=${libsodium_folder} && make -j2 && make install
 	if [[ $? -ne 0 ]]; then 
 		echo -e "${Error} ${RedBG} ${libsodium-version} install FAIL ${Font}"
