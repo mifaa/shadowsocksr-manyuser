@@ -314,7 +314,7 @@ SSR_installation(){
 	development_tools_installation
 	libsodium_installation
 	
-	cd ${shadowsocks_install_folder} && git clone -b manyuser https://github.com/mifaa/shadowsocksr-manyuser.git 
+	cd ${shadowsocks_install_folder} && git clone -b master https://github.com/mifaa/shadowsocksr-manyuser.git 
 	cd shadowsocks/manyuser && cp config.json /etc/shadowsocksr/config.json
 	
 	SSR_dependency_installation
