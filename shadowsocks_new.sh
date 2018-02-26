@@ -102,7 +102,7 @@ development_tools_installation(){
 	
 }
 libsodium_installation(){
-	wget https://raw.githubusercontent.com/pandoraes/shadowsocksr-manyuser/master/libsodium/${libsodium-version}.tar.gz
+	wget https://raw.githubusercontent.com/mifaa/shadowsocksr-manyuser/master/libsodium/${libsodium-version}.tar.gz
 	if [[ ! -f ${libsodium-version}.tar.gz ]]; then
 		echo -e "${Error} ${RedBG} ${libsodium-version} download FAIL ${Font}"
 		exit 1
@@ -314,7 +314,7 @@ SSR_installation(){
 	development_tools_installation
 	libsodium_installation
 	
-	cd ${shadowsocks_install_folder} && git clone -b manyuser https://github.com/pandoraes/shadowsocksr-manyuser.git 
+	cd ${shadowsocks_install_folder} && git clone -b manyuser https://github.com/mifaa/shadowsocksr-manyuser.git 
 	cd shadowsocks/manyuser && cp config.json /etc/shadowsocksr/config.json
 	
 	SSR_dependency_installation
