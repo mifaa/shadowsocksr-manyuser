@@ -1,3 +1,6 @@
+forked from pandoraes/shadowsocksr-manyuser
+
+
 # sspanel+节点 B1 后端一键安装配置管理脚本
 * 感谢glzjin wulabing提供的代码 
 * 适用于glzjin面板ssr后端的一键安装脚本 实现输入配置信息、以及全自动安装，配置一键修改，一键启动暂停等功能 支持 modwebapi 及 glzjinmod（mysql connect）
@@ -8,7 +11,7 @@
 
 # 安装方法 （ 2018/02/05 更新）
 ```
-git clone https://github.com/pandoraes/shadowsocksr-manyuser.git SSR
+git clone https://github.com/mifaa/shadowsocksr-manyuser.git SSR
 
 cd SSR
 ```
